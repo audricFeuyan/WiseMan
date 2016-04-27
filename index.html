@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>WiseMan</title>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <meta name="robots" content="noindex,nofollow,noarchive,noimageindex,notranslate" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+        
+        <link rel="stylesheet" href="http://openlayers.org/en/v3.15.1/css/ol.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        
+        <script src="http://openlayers.org/en/v3.15.1/build/ol.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>WiseMan</h1>
+            </header>            
+        
+            <div class="row">
+                <div class="col-md-2">
+                   
+                    <div id="info" style="display: none;"></div>
+                    <label for="track">
+                      Tracker ma position
+                      <input id="track" type="checkbox"/>
+                    </label>
+                    <p>
+                      Position : <code id="position"></code><br />
+                      Vitesse : <code id="vitesse"></code>
+                    </p>
+                </div> 
+                <div class="col-md-10">
+                    <div class="map" id="map">
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <footer>
+                    <p>
+                        Copyright &copy; 2016<strong>Audric FEUYAN</strong>
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </body>
+    
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://openlayers.org/en/v3.15.1/build/ol.js"></script>
+    <script src="js/wiseman.js"></script>
+   
+</html>
